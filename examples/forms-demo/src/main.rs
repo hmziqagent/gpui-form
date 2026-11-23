@@ -1327,7 +1327,7 @@ fn main() {
         gpui_form::i18n::init(cx);
 
         let window_options = WindowOptions {
-            window_bounds: Some(WindowBounds::centered(size(px(760.), px(860.)), cx)),
+            window_bounds: Some(WindowBounds::centered(None, size(px(760.), px(860.)), cx)),
             ..Default::default()
         };
         gpui_kit::open_window(window_options, cx, |window, cx| {
